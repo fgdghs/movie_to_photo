@@ -4,9 +4,10 @@ from moviepy.editor import VideoFileClip
 import numpy as np
 import os
 from datetime import timedelta
-
+##Кол-во кадров в секунду
 SAVING_FRAMES_PER_SECOND = 1
 
+##Функция для удобных названий
 def format_timedelta(td):
     result = str(td)
     try:
@@ -41,10 +42,11 @@ def main(video_file):
 
 
 
-
+##Путь к файлу
 video_file = 'F:\\WOMEN.mp4'
 main(video_file)
 
+##Путь к папке, в которой хранятся кадры
 dir_need, _ = os.path.splitext(video_file)
 print(dir_need)
 
